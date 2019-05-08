@@ -36,7 +36,7 @@ if ($_POST){
 		<?PHP } ?> 
  <h1>Bienvenue sur mon site web !</h1>
 <div class="navbar">
-	<a>Journalisme</a>
+	<a href=journalisme/chrono.php>Journalisme</a>
 	<a href="camagru/login.php">Camagru</a></a>
 	<a href="/aboutme.php">whoamI?</a>
 </div>

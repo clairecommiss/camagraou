@@ -15,8 +15,7 @@ try
 	echo $json_string;
 
 
-	
-	
+
 }
 catch (Exception $e)
 {
