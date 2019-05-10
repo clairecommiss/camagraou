@@ -11,16 +11,16 @@ if ($_POST[login]){
 	echo lol;
 	$login = $_POST[login];
 	$pass = $_POST[pass];
-	$success = $user->Login($login, $pass); //rappel : la meth Login considere comme OK le login OU l'email
+	$mail = $_POST[mail];
+	$name= $_POST[name];
+	$success = $user->Registration($login, $pass, $mail, $name); 
 	var_dump ($success);
 	if ($success){
-		echo 'LE USER EST LE NUM :'.$_SESSION[uid];
+		echo 'NOUVEL USER CREE ; LE USER EST LE NUM :'.$_SESSION[uid];
 		header("Location: home.php");
 	}
 	else
-		echo "Raté";
+		echo "Cet user existe deja.";
 	}
 
 ?>
-
-
